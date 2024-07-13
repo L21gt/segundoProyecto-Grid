@@ -2,7 +2,7 @@ Segundo proyecto
 Creación de página propia
 
 Descripción:
-    El obje;vo de este proyecto es diseñar y desarrollar una página web empresarial u;lizando solo HTML y CSS. La página debe ser completamente responsiva, es decir, debe adaptarse correctamente a diferentes tamaños de pantalla, como móviles, tabletas y ordenadores de escritorio. Se solicita crear una página con diseño hamburguesa, es decir, que tenga diferentes secciones en una misma página y se debe navegar en esta por medio de links. Deberá elegir una empresa fic;cia con información e imágenes ficticias.
+    El objetivo de este proyecto es diseñar y desarrollar una página web empresarial utilizando solo HTML y CSS. La página debe ser completamente responsiva, es decir, debe adaptarse correctamente a diferentes tamaños de pantalla, como móviles, tabletas y ordenadores de escritorio. Se solicita crear una página con diseño hamburguesa, es decir, que tenga diferentes secciones en una misma página y se debe navegar en esta por medio de links. Deberá elegir una empresa fic;cia con información e imágenes ficticias.
 
 
 Procedimiento:
