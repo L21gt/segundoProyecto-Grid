@@ -210,20 +210,27 @@ footer {
     background-color: #122868;
     gap: 25px;
 }
-.footer-downloadApp button {
+.footer-downloadApp a {
     border-radius: 25px;
     width: 70%;
     max-width: 200px;
     height: 20%;
     max-height: 41px;
     background-color: #F1641E;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-downloadApp button {
     font-size: 15px;
     color: white;
     font-weight: 600;
+    background-color: transparent;
     border: none;
-    cursor: pointer;
 }
-.footer-downloadApp button:hover {
+.footer-downloadApp a:hover {
     background-color: green;
     transform: scale(1.20);
     transition: background-color 0.3s ease, transform 0.3s ease;
