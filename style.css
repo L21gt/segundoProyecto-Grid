@@ -168,6 +168,165 @@ header {/*header container size*/
 
 
 /* ----- BODY SECTION ----- */
+.whatsNewSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 18% 1fr 18% 1fr;
+    max-height: 1000px;
+    padding-bottom: 30px;
+}
+.whatsNewTitle {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whatsNewTitle h3 {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 6px 6px 6px gray;
+    color: rgb(59, 13, 185);
+}
+.luigiBusGif {
+    grid-column: 1;
+    grid-row: 2 ;
+}
+.luigiBusGif img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.luigiBusDescription {
+    grid-column: 2;
+    grid-row: 2;
+}
+.luigi3dGif {
+    grid-column: 3;
+    grid-row: 2;
+}
+.luigi3dGif img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.luigiMarioGif img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gifHover img:hover {
+    transform: scale(1.9);
+    transition: 0.2s;
+    border-radius: 25px;
+}
+.luigiShopInvite {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shopNowButton {
+    grid-column: 6;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.luigiShopPhotos {
+    grid-column: 1 / span 5;
+    grid-row: 4;
+    display: flex;
+}
+.product1 img, .product2 img, .product3 img, .product4 img, .product5 img{
+    height: 70%;
+    width: 70%;
+    object-fit: contain;
+    background-color: transparent;
+}
+.product1, .product2, .product3, .product4, .product5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+    box-shadow: 0 0 15px 10px lightgray;
+    background: linear-gradient(45deg, rgba(202, 175, 252, 0.774), rgb(241, 241, 218), rgb(243, 247, 225), rgb(124, 194, 83));
+}
+.productHover:hover {
+    transform: scale(1.3);
+    transition: 0.2s;
+    box-shadow: none;
+}
+
+.descriptionStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin-right: 3%;
+}
+.descriptionStyle h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    color: goldenrod;
+}
+.descriptionStyle p {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.descriptionStyle button {
+    border-radius: 25px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgb(245, 227, 125);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.descriptionStyle button:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+    background-color: rgba(252, 214, 0, 0.973);
+}
+.luigiBusDescription {
+    background-color: rgb(104, 67, 165);
+}
+.luigi3dDescription {
+    background-color: rgb(64, 64, 151);
+}
+.luigiMarioBack {
+    background-color: #F1641E;
+}
+.shopNowButton button {
+    border-radius: 25px;
+    padding: 25px;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 900;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 4px 4px 20px rgb(14, 13, 3);
+    background-color: gold;
+}
+
+
+.product1 a, .product2 a, .product3 a, .product4 a, .product5 a  {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    height: 70%;
+    width: 70%;
+}
+.luigiShopInvite {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 6px 6px 6px lightblue;
+    color:  rgb(155, 115, 14);
+}
 
 
 
