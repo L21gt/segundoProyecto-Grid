@@ -358,6 +358,7 @@ header {/*header container size*/
     text-align: center;
     padding: 0 60px 0 60px;
     gap: 30px;
+    border-right: solid lightgray 1px;
 }
 .joinUsSection h3 {
     font-size: 50px;
@@ -405,13 +406,21 @@ header {/*header container size*/
     margin: 0;
     padding: 0;
 }
-.signInSection {
+.signInSectionContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3%;
     border-top: solid lightgray 1px;
+}
+.signInSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    height: 70%;
 }
 .signInSection h3 {
     padding-bottom: 3%;
@@ -425,13 +434,16 @@ header {/*header container size*/
     padding: 0;
     margin: 0;
     padding-top: 1%;
-    width: 100%;
-}
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap}
 .signInSection button {
     border-radius: 25px;
     padding: 1% 5% 1% 5%;
-    width: 70%;
-    max-width: 150px;
+    width: 100%;
+    max-width: 100px;
     cursor: pointer;
     background-color: rgb(245, 227, 125);
     font-family: cursive;
@@ -444,6 +456,7 @@ header {/*header container size*/
 }
 .signInSection a {
     width: 100%;
+    max-width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -458,6 +471,10 @@ header {/*header container size*/
     transition: ease-out 0.2s;
     transform: scale(1.1);
 }
+.forgotPasswordA h4{
+    margin: 0;
+    padding: 0;
+}
 
 /* What's New section */
 .whatsNewSection {
@@ -466,6 +483,8 @@ header {/*header container size*/
     grid-template-rows: 18% 1fr 18% 1fr;
     max-height: 1000px;
     padding-bottom: 30px;
+    border-top: solid lightgray 2px;
+    margin-top: 60px;
 }
 .whatsNewTitle {
     grid-column: 1 / span 6;
@@ -602,9 +621,8 @@ header {/*header container size*/
     transition: box-shadow 0.3s ease;
     box-shadow: 4px 4px 20px rgb(14, 13, 3);
     background-color: gold;
+    cursor: pointer;
 }
-
-
 .product1 a, .product2 a, .product3 a, .product4 a, .product5 a  {
     justify-content: center;
     align-items: center;
@@ -620,7 +638,57 @@ header {/*header container size*/
     color:  rgb(155, 115, 14);
 }
 
-
+/*Testimonials Section*/
+.testimonialsContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 20% 80%;
+    height: 400px;
+    padding: 0 0 40px 0;
+    margin-top: 20px;
+    border-top: solid lightgray 2px;
+}
+.testimonialTitle {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: cursive;
+    color: #a73f0b;
+    text-shadow: 10px 5px 10px gray;
+}
+.testimonialText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 22, 107);
+    color: white;
+    margin-left: 5%;
+    gap: 10%;
+}
+.testimonialPic {
+    margin-right: 5%;
+    background: linear-gradient(135deg, lightgray, gray);
+}
+.testimonialPic img {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+.testimonialText h3 {
+    color: goldenrod;
+    font-size: 25px;
+    text-align: center;
+}
+.testimonialText p {
+    padding: 0 15% 0 15%;
+    text-align: center;
+    font-style: italic;
+    font-size: 17px;
+}
 
 /*Footer section*/
 footer {
