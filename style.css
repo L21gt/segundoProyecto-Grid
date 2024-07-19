@@ -162,12 +162,304 @@ header {/*header container size*/
     width: 25px;
 }
 .headerMenuIcons img:hover {
-    transform: scale(1.3);
+    transform: scale(1.5);
     transition: 0.1s ease-out;
 }
 
 
-/* ----- BODY SECTION ----- */
+
+/* --------------- BODY SECTION -------------- */
+
+/* About Us section */
+.aboutUsSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 1fr 1fr 30%;
+    margin-top: 30px;
+}
+.welcomeToLuigiSectionPic img, .ourMissionSectionPic img, .ourStorySectionPic img {
+    width: 80%;
+    height: 80%;
+    object-fit: scale-down;
+}
+.aboutUsTitle {
+    grid-column: 1 / -1;
+    background-color: rgba(245, 223, 101, 0.877);
+    box-shadow: -10px -10px -30px -10px white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.aboutUsTitle::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    box-shadow: inset 0 0 10px 25px white;
+    border-radius: inherit;
+}
+.welcomeToLuigiSection {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    background-color: #96ace2;
+    box-shadow: -10px -10px -30px -10px white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.welcomeToLuigiSection::before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        right: -20px;
+        bottom: -20px;
+        box-shadow: inset 0 0 10px 30px white;
+        border-radius: inherit;
+}
+.welcomeToLuigiSectionPic{
+    grid-column: 3;
+    grid-row: 2;
+    background-color: lightgray;
+    box-shadow: -10px -10px -30px -10px white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.welcomeToLuigiSectionPic::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    box-shadow: inset 0 0 10px 30px white;
+    border-radius: inherit;
+}
+.ourMissionSection {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+    background-color: #e9a9d9;
+    box-shadow: -10px -10px -30px -10px white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.ourMissionSection::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    box-shadow: inset 0 0 10px 30px white;
+    border-radius: inherit;
+}
+.ourMissionSectionPic {
+    grid-column: 1 / span 1;
+    grid-row: 3;
+    background-color: lightgray;
+    box-shadow: -10px -10px -30px -10px white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.ourMissionSectionPic::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    box-shadow: inset 0 0 10px 30px white;
+    border-radius: inherit;
+}
+.ourStorySectionPic {
+    grid-column: 3;
+    grid-row: 4;
+    background-color: lightgray;
+    box-shadow: -10px -10px -30px -10px white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.ourStorySectionPic::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    box-shadow: inset 0 0 10px 30px white;
+    border-radius: inherit;
+}
+.ourStorySection {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    padding: 10px 0 10px 0;
+    background-color: #af8cf0;
+    box-shadow: -10px -10px -30px -10px white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.ourStorySection::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    box-shadow: inset 0 0 10px 25px white;
+    border-radius: inherit;
+}
+.aboutUsPosition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10% 0 10%;
+}
+.aboutUsText h2, .aboutUsText h3, .aboutUsText p {
+    margin: 0;
+    padding: 0;
+    max-width: 800px;
+    font-family: cursive;
+    text-align: center;
+}
+.aboutUsText p {
+    padding-top: 2%;
+}
+.aboutUsText h2 {
+    font-size: 40px;
+    color: purple;
+    font-style: italic;
+    text-shadow: 2px 6px 2px gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Join Us section */
+.joinUsContainer {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 30% 70%;
+    margin-top: 60px;
+    background: linear-gradient(135deg, rgb(48, 161, 161), rgb(245, 219, 153), rgb(158, 46, 185));
+}
+.joinUsSection {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 60px 0 60px;
+    gap: 30px;
+}
+.joinUsSection h3 {
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 10px 20px 10px gray;
+}
+.joinUsSection p {
+    max-width: 500px;
+    font-family: cursive;
+    font-size: 17px;
+    color: rgb(57, 15, 95);
+}
+.createAccountSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.createAccountSection button {
+    border-radius: 25px;
+    padding: 2% 5% 2% 5%;
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+    background-color: rgb(245, 227, 125);
+    font-family: cursive;
+    font-weight: 800;
+    font-size: 13px;
+}
+.createAccountSection button:hover {
+    transition: ease-out 0.2s;
+    transform: scale(1.1);
+}
+.createAccountSection a {
+    width: 50%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.createAccountSection h3 {
+    margin: 0;
+    padding: 0;
+}
+.signInSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    border-top: solid lightgray 1px;
+}
+.signInSection h3 {
+    padding-bottom: 3%;
+    margin: 0;
+}
+.signInSection p {
+    padding: 0;
+    margin: 0;
+}
+.signInSection h4 {
+    padding: 0;
+    margin: 0;
+    padding-top: 1%;
+    width: 100%;
+}
+.signInSection button {
+    border-radius: 25px;
+    padding: 1% 5% 1% 5%;
+    width: 70%;
+    max-width: 150px;
+    cursor: pointer;
+    background-color: rgb(245, 227, 125);
+    font-family: cursive;
+    font-weight: 800;
+    font-size: 13px;
+}
+.signInSection button:hover {
+    transition: ease-out 0.2s;
+    transform: scale(1.1);
+}
+.signInSection a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.signInSection input {
+    border-radius: 15px;
+    width: 50%;
+    padding-left: 3%;
+}
+.signInSection input:hover {
+    transition: ease-out 0.2s;
+    transform: scale(1.1);
+}
+
+/* What's New section */
 .whatsNewSection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -299,7 +591,7 @@ header {/*header container size*/
     background-color: rgb(64, 64, 151);
 }
 .luigiMarioBack {
-    background-color: #F1641E;
+    background-color: #a73f0b;
 }
 .shopNowButton button {
     border-radius: 25px;
