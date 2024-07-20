@@ -690,6 +690,88 @@ header {/*header container size*/
     font-size: 17px;
 }
 
+/* Email Us section */
+.contactUsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: solid lightgray 2px;
+    padding: 15px 0 20px 0;
+    border-bottom: solid lightgray 2px;
+    height: 400px;
+}
+.mapSection {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b7c79a;
+    box-shadow: -10px -10px -30px -10px white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.mapSection::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    box-shadow: inset 0 0 10px 30px white;
+    border-radius: inherit;
+}
+.emailUsSection {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20% 0 20%;
+    border-left: solid 2px lightgray;
+    background-color: #f3f1e3;
+    box-shadow: -10px -10px -30px -10px white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.emailUsSection::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    box-shadow: inset 0 0 10px 30px white;
+    border-radius: inherit;
+}
+.emailUsSection form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    padding-left: 20%;
+}
+.emailUsSection h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+.emailUsSection label{
+    padding: 3% 0 1% 0;
+}
+#name, #phone, #email {
+    width: 70%;
+}
+#submitEmail {
+    width: 50%;
+    margin-left: 25%;
+}
+
+/* Visit our offices section*/
+
+
 /*Footer section*/
 footer {
     color: white; /*general font color*/
