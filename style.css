@@ -638,6 +638,183 @@ header {/*header container size*/
     color:  rgb(155, 115, 14);
 }
 
+/* Services section */
+.servicesContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10% 30% 30% 30%;
+    border-top: solid 2px lightgray;
+    height: 700px;
+}
+.servicesTitle {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: cursive;
+    text-shadow: 10px 10px 20px black;
+    background: linear-gradient(to right, #85C455, #3B67D7);
+    color: rgb(59, 8, 8);
+}
+.servicesTitle h2 {
+    margin: 0;
+    padding: 0;
+}
+.service1 {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 1% 0 1% 1%;
+    color: white;
+    background-color: rgb(83, 67, 189);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10% 0 10%;
+}
+.servicesContainer h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    color: goldenrod;
+    font-family: cursive;
+}
+.servicesContainer p {
+    font-style: italic;
+    padding-bottom: 8%;
+}
+.servicesContainer button {
+    border-radius: 25px;
+    padding: 1% 5% 1% 5%;
+    width: 100%;
+    max-width: 130px;
+    cursor: pointer;
+    background-color: rgb(245, 227, 125);
+    font-family: cursive;
+    font-weight: 800;
+    font-size: 13px;
+}
+.servicesContainer button:hover {
+    transition: ease-out 0.2s;
+    transform: scale(1.1);
+}
+.servicesContainer a {
+    width: 100%;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.service2 {
+    grid-column: 1;
+    grid-row: 3;
+    margin: 1% 0 1% 1%;
+    color: white;
+    background-color: rgb(83, 67, 189);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10% 0 10%;
+}
+.service3 {
+    grid-column: 1;
+    grid-row: 4;
+    margin: 1% 0 1% 1%;
+    color: white;
+    background-color: rgb(83, 67, 189);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10% 0 10%;
+}
+.service4 {
+    grid-column: 3;
+    grid-row: 2;
+    margin: 1% 0 1% 1%;
+    color: white;
+    background-color: rgb(83, 67, 189);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10% 0 10%;
+}
+.service5 {
+    grid-column: 3;
+    grid-row: 3;
+    margin: 1% 0 1% 1%;
+    color: white;
+    background-color: rgb(83, 67, 189);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10% 0 10%;
+}
+.service6 {
+    grid-column: 3;
+    grid-row: 4;
+    margin: 1% 0 1% 1%;
+    color: white;
+    background-color: rgb(83, 67, 189);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10% 0 10%;
+}
+.serviceImg1 {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 1% 1% 1% 0;
+    background-color: rgb(196, 218, 196);
+}
+.serviceImg2 {
+    grid-column: 2;
+    grid-row: 3;
+    margin: 1% 1% 1% 0;
+    background-color: rgb(196, 218, 196);
+}
+.serviceImg3 {
+    grid-column: 2;
+    grid-row: 4;
+    margin: 1% 1% 1% 0;
+    background-color: rgb(196, 218, 196);
+}
+.serviceImg4 {
+    grid-column: 4;
+    grid-row: 2;
+    margin: 1% 1% 1% 0;
+    background-color: rgb(196, 218, 196);
+}
+.serviceImg5 {
+    grid-column: 4;
+    grid-row: 3;
+    margin: 1% 1% 1% 0;
+    background-color: rgb(196, 218, 196);
+}
+.serviceImg6 {
+    grid-column: 4;
+    grid-row: 4;
+    margin: 1% 1% 1% 0;
+    background-color: rgb(196, 218, 196);
+} 
+.servicesContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
 /*Testimonials Section*/
 .testimonialsContainer {
     display: grid;
